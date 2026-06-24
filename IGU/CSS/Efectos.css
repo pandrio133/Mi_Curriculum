@@ -1,0 +1,97 @@
+/* TEXTO CAMBIANTE */
+
+.cambiar{
+    position: relative;
+    height:var(50px);
+    overflow: hidden;
+}
+
+/* PALABRAS */
+.palabras{
+    display: flex;
+    flex-direction: column;
+    height:50px;
+    animation: deslizar 80s infinite;
+}
+/* ANIMACION */
+@keyframes deslizar{
+
+    0%{
+        transform: translateY(0);
+    }
+    25%{
+        transform: translateY(-50px);
+    }
+
+    50%{
+        transform: translateY(-100px);
+    }
+
+
+    75%{
+        transform: translateY(-150px);
+    }
+
+
+    100%{
+        transform: translateY(-200px);
+    }
+
+}
+/*sombra del botón*/
+.shadow-drop-center:hover {
+    animation: shadow-drop-center 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    
+}
+@keyframes shadow-drop-center {
+    0% {
+        box-shadow: 0 0 0px 0px #1817175d;
+    }
+    100% {
+        box-shadow: 0 0 15px 0px #eae0cfc9;
+        transform: scale(1.1);
+    }
+}
+/**/
+.txtB1:hover,.txtB2:hover{
+    color: #EAE0CF;
+}
+::selection{
+    background:#6e8cfb84;
+}
+
+.submenu{
+     opacity:0;
+
+    transform: translateY(-20px);
+
+    pointer-events: none;
+
+    transition: .4s;
+}
+.submenu.activo{
+    opacity: 1;
+
+    transform: translateY(0);
+
+    pointer-events: auto;
+
+}
+/*efecto de cubic box*/
+.CBox:hover{
+    animation: crecer 2s forwards;
+}
+@keyframes crecer {
+    from{
+        width: 3cm; height:3cm;
+        z-index: 1;
+    }
+    to{
+       width:5cm;
+       height: 6cm;
+       z-index: 999;
+    }
+}
+.CBox:hover .oculto{
+    opacity: 1;
+}
