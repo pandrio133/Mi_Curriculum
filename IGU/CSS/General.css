@@ -107,7 +107,7 @@ footer{
  .Box_3{
      width: 90%;
      overflow:visible;
-     height:15cm;
+     height:fit-content;
      margin-left:60px;
      margin-top:20px;
      margin-bottom: 20px;
@@ -122,16 +122,18 @@ footer{
     border-radius: 20px;
 }
 .CBox3a3{
-    width: 3cm;
-    height:3cm;
+    width:90%;
+    height:3.5cm;
+  
+    max-height:80%;
     padding: 10px;
     padding-left: 0;
+    padding-top: 0;
     
 }
 .CBox{
-    width: 3cm;
-    height:3cm;
-    max-width: 5cm;
+    width:3.5cm;
+    height:2.5cm;
 
     position: absolute;
     overflow: hidden;
@@ -161,7 +163,7 @@ footer{
     max-width: 100%;
     min-height:2cm;
     max-height: 8cm;
-    gap: 20px 20px  ; 
+    gap: 30px 20px  ; 
     margin-top:20px;
 
 }
@@ -185,10 +187,16 @@ footer{
     grid-template-rows:1fr 1fr;  
     margin-bottom: 10px;
 }
+.C4-R3{
+    grid-template-columns:1fr 1fr 1fr 1fr;    
+    grid-template-rows:1fr 1fr 1fr;  
+    margin-bottom: 10px;
+}
 .G-C1{grid-column: 1;}
 .G-C2{grid-column: 2;}
 .G-R1{grid-row: 1;}
 .G-R2{grid-row: 2;}
+.G-R2{grid-row: 3;}
 
 /*texto */
 p,a,h1,h2,h3,h4,h5,span{color: #EAE0CF; font-family:rem;font-weight: 100;font-style: normal; text-decoration: none;}
